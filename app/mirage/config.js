@@ -1,5 +1,11 @@
 export default function() {
 this.namespace = 'api';
+this.get('/posts');
+this.get('/posts/:id');
+this.post('/posts');
+this.del('/posts/:id');
+this.put('/posts/:id');
+this.namespace = 'api';
 this.get('/places');
 this.get('/places/:id');
 this.post('/places');

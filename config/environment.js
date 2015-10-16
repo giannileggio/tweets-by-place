@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'twitter-places',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://crackling-torch-5422.firebaseIO.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
